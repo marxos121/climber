@@ -1,18 +1,12 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Window/Event.hpp>
 
+#include "Game.h"
+
 int main() {
-	sf::RenderWindow window({ 300, 300, 32 }, "Window");
+	Game game;
 
-	while (window.isOpen()) {
-		sf::Event event;
-
-		while (window.pollEvent(event)) {
-			if (event.type == sf::Event::Closed) {
-				window.close();
-			}
-		}
-	}
+	game.play();
 
 	return 0;
 }

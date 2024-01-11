@@ -31,5 +31,6 @@
 *.out
 *.app
 /GamePlan.txt
-/.vs/Climber/FileContentIndex
-/.vs/Climber/v17
+/.vs/
+/Assets
+/x64/

@@ -5,6 +5,6 @@ class Stone : public Entity
 {
 public:
 	Stone();
-	void update(float elapsed) override;
+	void initialize(float playerY);
 };
 
